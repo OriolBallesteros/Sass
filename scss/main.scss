@@ -28,6 +28,7 @@ body {
   font-family: $text-font;
   color: $text-color;
   font-size: em(18px);        //em() -- own built function
+  background-color: $body-background-color;
 
   /*@if $contrast == high {
     color: #000;
