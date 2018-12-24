@@ -45,7 +45,8 @@ p {
   font-family: "Alegreya Sans", Arial, sans-serif; }
 
 a {
-  color: #c24721; }
+  color: #c24721;
+  color: #8779ff; }
   a:hover {
     color: #812f16; }
 
@@ -109,6 +110,13 @@ a {
       #main #sidebar li:hover {
         background-color: #efefef; }
 
+/*
 #footer {
-  /*height: $footer-height;
-  background-color: $ternary-color;*/ }
+  height: $footer-height;
+  background-color: $ternary-color;
+
+  @include rogers-rovers {
+    border-top: 5px solid darken($ternary-color, 15%);
+  }
+}
+*/

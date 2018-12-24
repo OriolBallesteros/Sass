@@ -1,5 +1,26 @@
 //@mixin /name/ --> allows us create code snippets
 
+//--brand--
+@mixin blue-beans {
+  @if $brand == blue-beans {
+    @content;
+  }
+}
+
+@mixin roger-rovers {
+  @if $brand == roger-rovers {
+    @content;
+  }
+}
+
+@mixin pastry-pizza {
+  @if $brand == pastry-pizza {
+    @content;
+  }
+}
+
+
+//--screen size--
 @mixin tiny-screens(){
   @media only screen and (max-width: 320px){
     @content; 
