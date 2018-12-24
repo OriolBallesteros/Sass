@@ -29,6 +29,10 @@
 @mixin warning {                  //@mixin /name/ --> allows us create code snippets
   background-color: orange;
   color: #fff;
+
+  &:hover{
+    background-color: lighten(orange, 10%);   //built-in function lighten()
+  }
 }
  
 @mixin box-shadow($shadows...) {    //only one argument is defined because it's only of one type. When we call this mixin, first argument will fit first use, second the second...
