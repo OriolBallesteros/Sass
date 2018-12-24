@@ -1,8 +1,8 @@
-@import "variables";  //partials are defined with a _ on the name. When we import, we just import it with the name itself. Prepocessor is smart enough
+@import "partials/variables";  //partials are defined with a _ on the name. When we import, we just import it with the name itself. Prepocessor is smart enough
+@import "partials/mixins";
 
-@import "mixins";
-
-
+@include google-font("Alegreya+Sans");
+@include google-font("Titillium+Web");
 
 @include fancy-links;         //calling a mixin out of a selector and before the body do apply its style globally
 
