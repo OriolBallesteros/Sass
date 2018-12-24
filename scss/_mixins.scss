@@ -9,6 +9,12 @@
     -webkit-box-shadow: $shadows;
 }
 
+@mixin apply-to-ie-6 {
+    * html {
+        @content;
+    }
+}
+
 @mixin large-text {
   font: {             //this sintaxy stands for font-size, font-weight... anyting 'font-'
     size: 22px;
