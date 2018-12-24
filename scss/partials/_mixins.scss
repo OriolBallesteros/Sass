@@ -1,18 +1,23 @@
+//@mixin /name/ --> allows us create code snippets
+
 @mixin tiny-screens(){
   @media only screen and (max-width: 320px){
     @content; 
   }
 }
+
 @mixin small-screens(){
   @media only screen and (max-width: 480px){
     @content; 
   }
 }
+
 @mixin medium-screens(){
   @media only screen and (max-width: 680px){
     @content; 
   }
 }
+
 @mixin large-screens(){
   @media only screen and (max-width: 960px){
     @content; 
@@ -26,7 +31,7 @@
   @import url(https://fonts.googleapis.com/css?family=#{$font});  //#{} interpolation of variable
 }
 
-@mixin warning {                  //@mixin /name/ --> allows us create code snippets
+@mixin warning {                  
   background-color: orange;
   color: #fff;
 
