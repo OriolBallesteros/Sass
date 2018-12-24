@@ -1,0 +1,27 @@
+@mixin warning {                  //@mixin /name/ --> allows us create code snippets
+    background-color: orange;
+    color: #fff;
+  }
+  
+  @mixin large-text {
+    font: {             //this sintaxy stands for font-size, font-weight... anyting 'font-'
+      size: 22px;
+      weight: bold;
+    }
+  }
+  
+  @mixin rounded {
+    border-radius: 6px;
+  }
+  
+  @mixin box {
+    @include rounded;
+    border: 1px solid #333;
+  }
+  
+  @mixin fancy-links {
+    a {
+      font-style: italic;
+      text-decoration: none;
+    }
+  }
