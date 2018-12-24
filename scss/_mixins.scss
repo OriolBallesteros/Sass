@@ -1,27 +1,33 @@
 @mixin warning {                  //@mixin /name/ --> allows us create code snippets
-    background-color: orange;
-    color: #fff;
+  background-color: orange;
+  color: #fff;
+}
+ 
+@mixin box-shadow($shadows...) {    //only one argument is defined because it's only of one type. When we call this mixin, first argument will fit first use, second the second...
+    box-shadow: $shadows;
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+}
+
+@mixin large-text {
+  font: {             //this sintaxy stands for font-size, font-weight... anyting 'font-'
+    size: 22px;
+    weight: bold;
   }
+}
   
-  @mixin large-text {
-    font: {             //this sintaxy stands for font-size, font-weight... anyting 'font-'
-      size: 22px;
-      weight: bold;
-    }
-  }
+@mixin rounded($radius: 6px) {       //default value
+  border-radius: $radius;
+}
   
-  @mixin rounded {
-    border-radius: 6px;
-  }
+@mixin box($radius: 6px, $border: 1px solid #000) {
+  @include rounded($radius);  //passing a variables due to rounded is a mixin with arguments     
+  border: $border;
+}
   
-  @mixin box {
-    @include rounded;
-    border: 1px solid #333;
+@mixin fancy-links {
+  a {
+    font-style: italic;
+    text-decoration: none;
   }
-  
-  @mixin fancy-links {
-    a {
-      font-style: italic;
-      text-decoration: none;
-    }
-  }
+}
